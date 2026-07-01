@@ -29,6 +29,8 @@ const Button = ({
         transition-all
         duration-300
         hover:-translate-y-1
+        hover:scale-[1.02]
+        active:scale-[0.98]
         ${variants[variant]}
         ${className}
       `}

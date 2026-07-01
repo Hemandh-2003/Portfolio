@@ -2,15 +2,16 @@ import { motion } from "framer-motion";
 import { profile } from "../../../data/profile";
 import HeroButtons from "./HeroButtons";
 import SocialLinks from "./SocialLinks";
+import { containerVariants, fadeUp } from "../../../animations/motion";
 
 const HeroContent = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -40 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.7 }}
-      className="flex flex-col"
-    >
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="flex flex-col"
+>
       {/* Badge */}
       <div className="mb-8">
         <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-400">

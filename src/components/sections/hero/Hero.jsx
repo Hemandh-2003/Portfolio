@@ -1,6 +1,9 @@
 import HeroContent from "./HeroContent";
-import ProfileCard from "./DeveloperCard";
+import DeveloperCard from "./DeveloperCard";
 import TrustedTech from "./TrustedTech";
+import Background from "../../ui/Background";
+import Spotlight from "../../ui/Spotlight";
+import ScrollIndicator from "./ScrollIndicator";
 
 const Hero = () => {
   return (
@@ -8,6 +11,8 @@ const Hero = () => {
       id="home"
       className="relative overflow-hidden bg-[#030712]"
     >
+        <Background />
+        <Spotlight />
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-20 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-600/20 blur-[140px]" />
@@ -20,9 +25,10 @@ const Hero = () => {
         <div className="grid w-full items-center gap-20 lg:grid-cols-[1.2fr_0.8fr]">
           <HeroContent />
 
-          <ProfileCard />
+          <DeveloperCard />
         </div>
       </div>
+      <ScrollIndicator />
 
       <TrustedTech />
     </section>

@@ -1,12 +1,24 @@
 import Navbar from "./components/layout/navbar/Navbar";
-import Hero from "./components/sections/hero/Hero";
+import Hero from "./components/sections/hero";
+import About from "./components/sections/about";
+import Skills from "./components/sections/skills";
+import Projects from "./components/sections/projects";
+import Experience from "./components/sections/experience";
+import Contact from "./components/sections/contact";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
-    <div className="bg-[#030712] text-white">
+    <>
       <Navbar />
       <Hero />
-    </div>
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
