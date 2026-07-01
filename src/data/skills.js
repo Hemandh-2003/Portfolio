@@ -1,50 +1,77 @@
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaGithub,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaDatabase,
+} from "react-icons/fa";
+
+import {
+  SiExpress,
+  SiMongodb,
+  SiJavascript,
+  SiTailwindcss,
+  SiPostman,
+  SiCloudinary,
+  SiMysql,
+  SiGooglegemini,
+} from "react-icons/si";
+
+import { VscVscode } from "react-icons/vsc"
+
 export const skillCategories = [
   {
     title: "Frontend",
-    icon: "💻",
+    description: "Responsive and interactive user interfaces",
+    icon: FaReact,
     skills: [
-      "React",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-      "Bootstrap",
+      { name: "React", icon: FaReact },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "HTML5", icon: FaHtml5 },
+      { name: "CSS3", icon: FaCss3Alt },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Bootstrap", icon: FaBootstrap },
     ],
   },
 
   {
     title: "Backend",
-    icon: "⚙️",
+    description: "Secure APIs and scalable server architecture",
+    icon: FaNodeJs,
     skills: [
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "JWT Authentication",
+      { name: "Node.js", icon: FaNodeJs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "REST API", icon: FaDatabase },
+      { name: "JWT", icon: FaDatabase },
     ],
   },
 
   {
     title: "Database",
-    icon: "🗄️",
+    description: "Efficient data storage and modeling",
+    icon: SiMongodb,
     skills: [
-      "MongoDB",
-      "Mongoose",
-      "MySQL",
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "Mongoose", icon: SiMongodb },
+      { name: "MySQL", icon: SiMysql },
     ],
   },
 
   {
     title: "AI & Tools",
-    icon: "🤖",
+    description: "Modern development workflow",
+    icon: SiGooglegemini,
     skills: [
-      "Gemini AI",
-      "Open AI",
-      "Grok",
-      "Git",
-      "GitHub",
-      "Cloudinary",
-      "Postman",
-      "VS Code",
+      { name: "Gemini AI", icon: SiGooglegemini },
+      { name: "Groq AI", icon: SiGooglegemini },
+      { name: "Git", icon: FaGitAlt },
+      { name: "GitHub", icon: FaGithub },
+      { name: "Cloudinary", icon: SiCloudinary },
+      { name: "Postman", icon: SiPostman },
+      { name: "VS Code", icon: VscVscode },
     ],
   },
 ];
