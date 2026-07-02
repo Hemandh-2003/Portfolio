@@ -1,4 +1,4 @@
-import ProjectImage from "./ProjectImage";
+import ProjectMedia from "./ProjectMedia";
 import FeatureList from "./FeatureList";
 import TechStack from "./TechStack";
 import ProjectActions from "./ProjectActions";
@@ -10,7 +10,7 @@ const ProjectShowcase = ({ project, reverse }) => {
         reverse ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >
-      <ProjectImage project={project} />
+      <ProjectMedia project={project} />
 
       <div>
         {project.featured && (

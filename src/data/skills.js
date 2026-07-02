@@ -69,6 +69,7 @@ export const skillCategories = [
       { name: "Groq AI", icon: SiGooglegemini },
       { name: "Git", icon: FaGitAlt },
       { name: "GitHub", icon: FaGithub },
+      { name: "AWS", icon: SiCloudinary},
       { name: "Cloudinary", icon: SiCloudinary },
       { name: "Postman", icon: SiPostman },
       { name: "VS Code", icon: VscVscode },

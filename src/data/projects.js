@@ -1,5 +1,7 @@
 import securetrade from "../assets/images/securetrade.png";
 import tripgen from "../assets/images/tripgen.png";
+import securetradeVideo from "../assets/videos/SecureTrade.mp4";
+import tripgenVideo from "../assets/videos/TripGen-ai.mp4";
 
 export const projects = [
   {
@@ -24,7 +26,9 @@ export const projects = [
 
     image: securetrade,
 
-    video: "",
+    video: securetradeVideo,
+
+    featured: true,
 
     features: [
       "AI Image Verification",
@@ -72,7 +76,9 @@ export const projects = [
 
     image: tripgen,
 
-    video: "",
+    video: tripgenVideo,
+
+    featured: true,
 
     features: [
       "AI Trip Generation",
