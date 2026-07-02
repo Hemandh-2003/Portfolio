@@ -5,6 +5,7 @@ import Skills from "./components/sections/skills";
 import Projects from "./components/sections/projects";
 import Experience from "./components/sections/experience";
 import Contact from "./components/sections/contact";
+import AIChat from "./components/ai";
 import Footer from "./components/layout/Footer";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Projects />
       <Experience />
       <Contact />
+      <AIChat />
       <Footer />
     </>
   );
